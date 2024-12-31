@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Data Engineer Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <style>
+        .blog-post {
+            transition: transform 0.2s;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <h1 class="text-xl font-bold">Your Name</h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+                    <a href="#blogs" class="text-gray-700 hover:text-blue-600">Blogs</a>
+                    <a href="#resources" class="text-gray-700 hover:text-blue-600">Resources</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+        <div class="bg-white py-16">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <img src="/api/placeholder/150/150" alt="Profile" class="rounded-full mx-auto mb-6 shadow-lg">
+                <h1 class="text-4xl font-bold text-gray-900">Data Engineer & Technical Writer</h1>
+                <p class="mt-4 text-xl text-gray-600">3 Years of Experience in Data Engineering</p>
+                <div class="mt-6 space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Contact Me</a>
+                    <a href="#projects" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-blue-600">Data Engineering</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            SQL & Database Design
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            Python Programming
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            Azure Data Factory
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-green-600">Cloud & Tools</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            Azure Services
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            ETL Tools
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            Version Control (Git)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-4 text-purple-600">Knowledge Sharing</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            Technical Writing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            Documentation
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                            Training Materials
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Data Pipeline Automation</h3>
+                        <p class="text-gray-600 mb-4">Automated ETL processes using Azure Data Factory and Python, reducing manual effort by 70%</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Azure</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Data Quality Framework</h3>
+                        <p class="text-gray-600 mb-4">Developed a comprehensive data quality framework that improved data accuracy by 40%</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SQL</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blogs" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="blog-post bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SQL Interview Guide</h3>
+                        <p class="text-gray-600">Common SQL interview questions and their detailed solutions...</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-post bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Azure Data Factory Tips</h3>
+                        <p class="text-gray-600">Best practices for designing efficient data pipelines...</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="blog-post bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Python for Data Engineers</h3>
+                        <p class="text-gray-600">Essential Python concepts every data engineer should know...</p>
+                        <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <p>Email: your.email@example.com</p>
+                    <p>Location: Your City, Country</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect</h3>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-blue-400">LinkedIn</a>
+                        <a href="#" class="block hover:text-blue-400">GitHub</a>
+                        <a href="#" class="block hover:text-blue-400">Twitter</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Resources</h3>
+                    <div class="space-y-2">
+                        <a href="#" class="block hover:text-blue-400">Blog</a>
+                        <a href="#" class="block hover:text-blue-400">Documentation</a>
+                        <a href="#" class="block hover:text-blue-400">Tutorials</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
