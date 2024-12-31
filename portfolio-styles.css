@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #06b6d4;
+  --accent-color: #8b5cf6;
+  --success-color: #22c55e;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Animations */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  padding: 8rem 0;
+  color: white;
+}
+
+.hero-content {
+  animation: slideIn 1s ease-out;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Experience Section */
+.experience-timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.experience-item {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Accomplishments Section */
+.accomplishment-card {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+/* Certifications */
+.certification-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 2rem;
+  margin: 0.5rem;
+}
+
+/* Progress Bars */
+.progress-bar {
+  height: 0.5rem;
+  background: #e2e8f0;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transition: width 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-item {
+    margin: 1rem 0;
+  }
+}
