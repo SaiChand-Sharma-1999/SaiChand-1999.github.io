@@ -3,205 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Data Engineer Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
-    <style>
-        .blog-post {
-            transition: transform 0.2s;
-        }
-        .blog-post:hover {
-            transform: translateY(-5px);
-        }
-    </style>
+    <title>Sai Chand - Data Engineer & Azure Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
-<body class="bg-gray-50">
+<body>
+    <div id="particles-js"></div>
+    
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <h1 class="text-xl font-bold">Your Name</h1>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-                    <a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
-                    <a href="#blogs" class="text-gray-700 hover:text-blue-600">Blogs</a>
-                    <a href="#resources" class="text-gray-700 hover:text-blue-600">Resources</a>
-                </div>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Sai Chand</h1>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#accomplishments">Accomplishments</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="pt-20">
-        <div class="bg-white py-16">
-            <div class="max-w-6xl mx-auto px-4 text-center">
-                <img src="/api/placeholder/150/150" alt="Profile" class="rounded-full mx-auto mb-6 shadow-lg">
-                <h1 class="text-4xl font-bold text-gray-900">Data Engineer & Technical Writer</h1>
-                <p class="mt-4 text-xl text-gray-600">3 Years of Experience in Data Engineering</p>
-                <div class="mt-6 space-x-4">
-                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Contact Me</a>
-                    <a href="#projects" class="bg-gray-200 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-300">View Projects</a>
-                </div>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-text"></h1>
+                <p>Azure Certified Professional with 3+ Years of Experience</p>
             </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-timeline">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="experience-item animate-on-scroll">
+                <h3>Data Engineer</h3>
+                <ul>
+                    <li>Developed ETL Informatica workflows, connecting to Oracle DB in an on-prem server</li>
+                    <li>Created and managed ETL Azure Data Factory pipelines with SCD types 1, 2, and 3</li>
+                    <li>Implemented medallion architecture for POC as part of Modernization Implementation</li>
+                </ul>
+            </div>
+            <!-- Add more experience items -->
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-4 text-blue-600">Data Engineering</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                            SQL & Database Design
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                            Python Programming
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                            Azure Data Factory
-                        </li>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll">
+                    <h3>Azure Services</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-target="90"></div>
+                    </div>
+                    <ul>
+                        <li>Azure SQL Database</li>
+                        <li>Azure Synapse Analytics</li>
+                        <li>Azure Logic Apps</li>
                     </ul>
                 </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-4 text-green-600">Cloud & Tools</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                            Azure Services
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                            ETL Tools
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                            Version Control (Git)
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <h3 class="text-xl font-bold mb-4 text-purple-600">Knowledge Sharing</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                            Technical Writing
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                            Documentation
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
-                            Training Materials
-                        </li>
-                    </ul>
-                </div>
+                <!-- Add more skill cards -->
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Data Pipeline Automation</h3>
-                        <p class="text-gray-600 mb-4">Automated ETL processes using Azure Data Factory and Python, reducing manual effort by 70%</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Azure</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SQL</span>
-                        </div>
-                    </div>
+    <!-- Accomplishments Section -->
+    <section id="accomplishments">
+        <div class="container">
+            <h2>Accomplishments</h2>
+            <div class="accomplishments-grid">
+                <div class="accomplishment-card animate-on-scroll">
+                    <h3>Awards & Recognition</h3>
+                    <p>Recognized with Rising Star and Star Awards for exceptional contributions</p>
                 </div>
-
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Data Quality Framework</h3>
-                        <p class="text-gray-600 mb-4">Developed a comprehensive data quality framework that improved data accuracy by 40%</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">SQL</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">Power BI</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Add more accomplishment cards -->
             </div>
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blogs" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Latest Articles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="blog-post bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">SQL Interview Guide</h3>
-                        <p class="text-gray-600">Common SQL interview questions and their detailed solutions...</p>
-                        <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="blog-post bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Azure Data Factory Tips</h3>
-                        <p class="text-gray-600">Best practices for designing efficient data pipelines...</p>
-                        <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="blog-post bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Python for Data Engineers</h3>
-                        <p class="text-gray-600">Essential Python concepts every data engineer should know...</p>
-                        <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Read More →</a>
-                    </div>
-                </div>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="certification-badges">
+                <span class="certification-badge">AZ-900 Azure Fundamentals</span>
+                <span class="certification-badge">AZ-104 Azure Administrator</span>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact</h3>
-                    <p>Email: your.email@example.com</p>
-                    <p>Location: Your City, Country</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Connect</h3>
-                    <div class="space-y-2">
-                        <a href="#" class="block hover:text-blue-400">LinkedIn</a>
-                        <a href="#" class="block hover:text-blue-400">GitHub</a>
-                        <a href="#" class="block hover:text-blue-400">Twitter</a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Resources</h3>
-                    <div class="space-y-2">
-                        <a href="#" class="block hover:text-blue-400">Blog</a>
-                        <a href="#" class="block hover:text-blue-400">Documentation</a>
-                        <a href="#" class="block hover:text-blue-400">Tutorials</a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center">
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
